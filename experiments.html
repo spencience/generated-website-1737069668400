@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Experiments & Interactive Projects | Spencer Wilson</title>
+    <meta name="description" content="Explore innovative web experiments, creative coding projects, and interactive experiences by Spencer Wilson. Featuring WebGL, generative art, and creative technology demos.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        .gradient-bg {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        .experiment-card:hover .experiment-overlay {
+            opacity: 1;
+        }
+        .experiment-overlay {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <a href="https://spencience.github.io/generated-website-1737068880678/home.html" class="text-2xl font-bold hover:text-gray-200">Spencer Wilson</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="https://spencience.github.io/generated-website-1737068880678/projects.html" class="hover:text-gray-200">Projects</a>
+                    <a href="https://spencience.github.io/generated-website-1737068880678/blog.html" class="hover:text-gray-200">Blog</a>
+                    <a href="https://spencience.github.io/generated-website-1737068880678/experiments.html" class="hover:text-gray-200">Experiments</a>
+                    <a href="https://spencience.github.io/generated-website-1737068880678/contact.html" class="hover:text-gray-200">Contact</a>
+                </div>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="prose max-w-none">
+                <h1 class="text-4xl font-bold mb-6">Creative Experiments</h1>
+                <p class="text-gray-600 mb-8">Welcome to my digital laboratory where I push the boundaries of web technology and creative coding. Each experiment represents a unique exploration into interactive experiences, generative art, and innovative web technologies.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Experiment 1 -->
+                    <div class="experiment-card relative rounded-lg overflow-hidden shadow-lg">
+                        <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                        <div class="experiment-overlay absolute inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4">
+                            <div class="text-center text-white">
+                                <h3 class="text-xl font-bold mb-2">Generative Patterns</h3>
+                                <p class="mb-4">Interactive pattern generator using WebGL</p>
+                                <a href="https://spencience.github.io/generated-website-1737068880678/experiments/generative-patterns.html" class="inline-block bg-white text-black px-4 py-2 rounded hover:bg-gray-200">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experiment 2 -->
+                    <div class="experiment-card relative rounded-lg overflow-hidden shadow-lg">
+                        <div class="h-48 bg-gradient-to-r from-blue-500 to-teal-500"></div>
+                        <div class="experiment-overlay absolute inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4">
+                            <div class="text-center text-white">
+                                <h3 class="text-xl font-bold mb-2">Audio Visualizer</h3>
+                                <p class="mb-4">Real-time audio visualization with Web Audio API</p>
+                                <a href="https://spencience.github.io/generated-website-1737068880678/experiments/audio-visualizer.html" class="inline-block bg-white text-black px-4 py-2 rounded hover:bg-gray-200">Experience</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experiment 3 -->
+                    <div class="experiment-card relative rounded-lg overflow-hidden shadow-lg">
+                        <div class="h-48 bg-gradient-to-r from-orange-500 to-yellow-500"></div>
+                        <div class="experiment-overlay absolute inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4">
+                            <div class="text-center text-white">
+                                <h3 class="text-xl font-bold mb-2">Particle Physics</h3>
+                                <p class="mb-4">Interactive particle system simulation</p>
+                                <a href="https://spencience.github.io/generated-website-1737068880678/experiments/particle-physics.html" class="inline-block bg-white text-black px-4 py-2 rounded hover:bg-gray-200">Play</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <h2 class="text-2xl font-bold mb-4">Latest Experiments</h2>
+                    <div class="space-y-4">
+                        <a href="/generated-website-1737068880678/experiments/neural-art.html" class="block p-4 border rounded-lg hover:bg-gray-50">
+                            <h3 class="font-bold">Neural Art Generator</h3>
+                            <p class="text-gray-600">Exploring machine learning and creative expression</p>
+                        </a>
+                        <a href="/generated-website-1737068880678/experiments/shader-playground.html" class="block p-4 border rounded-lg hover:bg-gray-50">
+                            <h3 class="font-bold">Shader Playground</h3>
+                            <p class="text-gray-600">Interactive GLSL shader experiments</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <div class="space-y-2">
+                        <a href="https://github.com/spencerwilson" class="block hover:text-gray-300">GitHub</a>
+                        <a href="https://twitter.com/spencerwilson" class="block hover:text-gray-300">Twitter</a>
+                        <a href="https://linkedin.com/in/spencerwilson" class="block hover:text-gray-300">LinkedIn</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Resources</h3>
+                    <div class="space-y-2">
+                        <a href="https://spencience.github.io/generated-website-1737068880678/newsletter.html" class="block hover:text-gray-300">Newsletter</a>
+                        <a href="https://spencience.github.io/generated-website-1737068880678/resources.html" class="block hover:text-gray-300">Learning Resources</a>
+                        <a href="https://spencience.github.io/generated-website-1737068880678/tools.html" class="block hover:text-gray-300">Tools</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legal</h3>
+                    <div class="space-y-2">
+                        <a href="https://spencience.github.io/generated-website-1737068880678/privacy.html" class="block hover:text-gray-300">Privacy Policy</a>
+                        <a href="https://spencience.github.io/generated-website-1737068880678/terms.html" class="block hover:text-gray-300">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p>&copy; 2024 Spencer Wilson. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

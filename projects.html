@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Spencer Wilson | Creative Developer</title>
+    <meta name="description" content="Explore Spencer Wilson's portfolio of creative development projects, including web applications, experiments, and open-source contributions.">
+    <meta name="keywords" content="Spencer Wilson, creative developer, web development, portfolio, projects">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        .gradient-bg {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-50">
+    <header class="gradient-bg text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <a href="https://spencience.github.io/generated-website-1737068880678/home.html" class="text-2xl font-bold hover:text-gray-200">Spencer Wilson</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="https://spencience.github.io/generated-website-1737068880678/projects.html" class="hover:text-gray-200">Projects</a>
+                    <a href="https://spencience.github.io/generated-website-1737068880678/blog.html" class="hover:text-gray-200">Blog</a>
+                    <a href="https://spencience.github.io/generated-website-1737068880678/experiments.html" class="hover:text-gray-200">Experiments</a>
+                    <a href="https://spencience.github.io/generated-website-1737068880678/contact.html" class="hover:text-gray-200">Contact</a>
+                </div>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="https://spencience.github.io/generated-website-1737068880678/projects.html" class="block px-3 py-2 hover:bg-white/10 rounded">Projects</a>
+                    <a href="https://spencience.github.io/generated-website-1737068880678/blog.html" class="block px-3 py-2 hover:bg-white/10 rounded">Blog</a>
+                    <a href="https://spencience.github.io/generated-website-1737068880678/experiments.html" class="block px-3 py-2 hover:bg-white/10 rounded">Experiments</a>
+                    <a href="https://spencience.github.io/generated-website-1737068880678/contact.html" class="block px-3 py-2 hover:bg-white/10 rounded">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="prose max-w-none">
+                <h1 class="text-4xl font-bold mb-6">Featured Projects</h1>
+                <p class="text-gray-600 mb-8">Explore my latest work in web development, creative coding, and digital experiences.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <article class="project-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="gradient-bg h-48"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Interactive Data Visualization</h3>
+                            <p class="text-gray-600 mb-4">A real-time data visualization platform built with D3.js and React</p>
+                            <a href="https://spencience.github.io/generated-website-1737068880678/projects/data-viz.html" class="text-blue-600 hover:text-blue-800">View Project →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="gradient-bg h-48"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">AI-Powered Chat Interface</h3>
+                            <p class="text-gray-600 mb-4">Natural language processing application using OpenAI's GPT-3</p>
+                            <a href="https://spencience.github.io/generated-website-1737068880678/projects/ai-chat.html" class="text-blue-600 hover:text-blue-800">View Project →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="gradient-bg h-48"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">WebGL Experiments</h3>
+                            <p class="text-gray-600 mb-4">Collection of creative coding experiments using Three.js</p>
+                            <a href="https://spencience.github.io/generated-website-1737068880678/projects/webgl.html" class="text-blue-600 hover:text-blue-800">View Project →</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="mt-12">
+                    <h2 class="text-2xl font-bold mb-4">Open Source Contributions</h2>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h3 class="font-bold">React Component Library</h3>
+                            <p class="text-gray-600">A collection of reusable UI components built with React and TypeScript</p>
+                            <a href="https://spencience.github.io/generated-website-1737068880678/projects/react-components.html" class="text-blue-600 hover:text-blue-800">Learn more →</a>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h3 class="font-bold">Developer Tools</h3>
+                            <p class="text-gray-600">CLI tools and utilities for improving developer workflow</p>
+                            <a href="https://spencience.github.io/generated-website-1737068880678/projects/dev-tools.html" class="text-blue-600 hover:text-blue-800">Learn more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <div class="space-y-2">
+                        <a href="https://github.com/spencerwilson" class="block hover:text-gray-300">GitHub</a>
+                        <a href="https://twitter.com/spencerwilson" class="block hover:text-gray-300">Twitter</a>
+                        <a href="https://linkedin.com/in/spencerwilson" class="block hover:text-gray-300">LinkedIn</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Resources</h3>
+                    <div class="space-y-2">
+                        <a href="https://spencience.github.io/generated-website-1737068880678/newsletter.html" class="block hover:text-gray-300">Newsletter</a>
+                        <a href="https://spencience.github.io/generated-website-1737068880678/resources.html" class="block hover:text-gray-300">Learning Resources</a>
+                        <a href="https://spencience.github.io/generated-website-1737068880678/tools.html" class="block hover:text-gray-300">Tools</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legal</h3>
+                    <div class="space-y-2">
+                        <a href="https://spencience.github.io/generated-website-1737068880678/privacy.html" class="block hover:text-gray-300">Privacy Policy</a>
+                        <a href="https://spencience.github.io/generated-website-1737068880678/terms.html" class="block hover:text-gray-300">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p>&copy; 2024 Spencer Wilson. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
